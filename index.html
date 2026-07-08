@@ -23,11 +23,8 @@
 
   /* HEADER */
   header { background: var(--navy); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 64px; box-shadow: 0 2px 8px rgba(0,0,0,0.18); }
-  .brand { display: flex; align-items: center; gap: 12px; }
-  .brand-icon { width: 38px; height: 38px; background: var(--green); border-radius: 6px; display: flex; align-items: center; justify-content: center; }
-  .brand-icon svg { width: 22px; height: 22px; fill: white; }
-  .brand-name { color: white; font-size: 20px; font-weight: 700; letter-spacing: 1px; }
-  .brand-sub { color: rgba(255,255,255,0.55); font-size: 11px; letter-spacing: 0.5px; margin-top: 1px; }
+  .brand { display: flex; align-items: center; }
+  .brand-logo { height: 42px; width: auto; display: block; filter: brightness(0) invert(1); }
   .header-badge { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; padding: 4px 12px; font-size: 11px; color: rgba(255,255,255,0.75); }
 
   /* MAIN */
@@ -143,13 +140,7 @@
 
 <header>
   <div class="brand">
-    <div class="brand-icon">
-      <svg viewBox="0 0 24 24"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z"/></svg>
-    </div>
-    <div>
-      <div class="brand-name">FILTECH</div>
-      <div class="brand-sub">Recursos Humanos</div>
-    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/PNG_transparency_demonstration_1.png/280px-PNG_transparency_demonstration_1.png" alt="Filtech" class="brand-logo" onerror="this.style.display='none'" id="brandLogo" />
   </div>
   <div class="header-badge">NOM-035-STPS-2018</div>
 </header>
